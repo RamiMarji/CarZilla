@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Zilla website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"> <span>Car</span>Zilla </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#cars">Cars</a>
+        <a href="#services">services</a>
+        <a href="#most-selling">most selling</a>
+    </nav>
+
+    <div id="login-btn">
+        <button class="btn">login</button>
+        <i class="far fa-user"></i>
+    </div>
+
+</header> 
+    
+<div class="login-form-container">
+
+    <span id="close-login-form" class="fas fa-times"></span>
+
+    <form action="">
+        <h3>user login</h3>
+        <input type="email" placeholder="email" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p> forget your password <a href="#">click here</a> </p>
+        <input type="submit" value="login" class="btn">
+        <p>or login with</p>
+        <div class="buttons">
+            <a href="#" class="btn"> google </a>
+            <a href="#" class="btn"> facebook </a>
+        </div>
+        <p> don't have an account <a href="#">create one</a> </p>
+    </form>
+
+</div>
+
+<section class="home" id="home">
+    <img  class="home-img" src="image/home-imgg.jpg" alt="">
+    <a data-speed="7" href="#" class="btn home-parallax">explore cars</a>
+</section>
+
+<section class="cars" id="cars">
+
+    <h1 class="heading"> popular <span>Cars</span> </h1>
+
+    <div class="swiper cars-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img class="pop-cars" src="image/car6.jpg" alt="">
+                <div class="content">
+                    <h3>Nissan</h3>
+                    <div class="price"> <span>price : </span> $60,000 </div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2018
+                        <span class="fas fa-circle"></span> Manual
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 283 KPH
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img  class="pop-cars" src="image/car1.jpg" alt="">
+                <div class="content">
+                    <h3>Bmw</h3>
+                    <div class="price"> <span>price : </span> $90,000</div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2021
+                        <span class="fas fa-circle"></span> Manual
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 220kph
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img  class="pop-cars" src="image/car2.jpg" alt="">
+                <div class="content">
+                    <h3>Tesla</h3>
+                    <div class="price"> <span>price : </span> $400,000</div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2022
+                        <span class="fas fa-circle"></span> Automatic
+                        <span class="fas fa-circle"></span> Elictric
+                        <span class="fas fa-circle"></span> 380 Kph
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img class="pop-cars" src="image/car3.jpg" alt="">
+                <div class="content">
+                    <h3>Mercedes </h3>
+                    <div class="price"> <span>price : </span> $140,000</div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2020
+                        <span class="fas fa-circle"></span> Automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 200 KPH
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img  class="pop-cars"src="image/car4.jpg" alt="">
+                <div class="content">
+                    <h3>Porsche</h3>
+                    <div class="price"> <span>price : </span> $700,000</div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2019
+                        <span class="fas fa-circle"></span> Automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 400 KPH 
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img class="pop-cars" src="image/car5.jpg" alt="">
+                <div class="content">
+                    <h3>Ferrari</h3>
+                    <div class="price"> <span>price : </span> $2.7M </div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2022
+                        <span class="fas fa-circle"></span> automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 400 KPH
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<section class="most-selling" id="most-selling">
+    <h1 class="heading"> <span>most selling</span> Cars </h1>
+
+    <div class="swiper most-selling-slider">
+
+       <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/car-1.png" alt="">
+                <div class="content">
+                    <h3>Mercedes </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$200,000</div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/car-2.png" alt="">
+                <div class="content">
+                    <h3> fiat  </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$80,000</div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/car-3.png" alt="">
+                <div class="content">
+                    <h3>Ford</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$90,000</div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/car-4.png" alt="">
+                <div class="content">
+                    <h3>Audi</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$150,000</div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+       </div>
+
+       <div class="swiper-pagination"></div>
+
+    </div>
+
+    <div class="swiper most-selling-slider">
+
+        <div class="swiper-wrapper">
+ 
+             <div class="swiper-slide box">
+                 <img src="image/car-5.png" alt="">
+                 <div class="content">
+                     <h3>Kia</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <div class="price">$70,000</div>
+                     <a href="#" class="btn">Buy Now</a>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="image/car-6.png" alt="">
+                 <div class="content">
+                     <h3>Honda</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <div class="price">$65,000</div>
+                     <a href="#" class="btn">Buy Now</a>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="image/car-7.png" alt="">
+                 <div class="content">
+                     <h3>Kia</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <div class="price">$80,000</div>
+                     <a href="#" class="btn">Buy Now</a>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="image/car-8.png" alt="">
+                 <div class="content">
+                     <h3>Shaverlate</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <div class="price">$100,000</div>
+                     <a href="#" class="btn">Buy Now </a>
+                 </div>
+             </div>
+ 
+        </div>
+ 
+        <div class="swiper-pagination"></div>
+ 
+     </div>
+</section>
+
+<section class="services" id="services">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-car"></i>
+            <h3>car selling</h3>
+            <p>We sell the best cars in the world with best insurance </p>
+            <a href="#" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-tools"></i>
+            <h3>parts repair</h3>
+            <p>All parts for any car can find it here with  best price </p>
+            <a href="#" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-crash"></i>
+            <h3>car insurance</h3>
+            <p>CarZilla have the best full insurance in the world </p>
+            <a href="#" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-battery"></i>
+            <h3>battery replacement</h3>
+            <p>All batteries come from international companies</p>
+            <a href="#" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-gas-pump"></i>
+            <h3>oil change</h3>
+            <p>The one and only place to buy the best Oil</p>
+            <a href="#" class="btn"> read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>232+</h3>
+            <p>branches</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3>10.000+</h3>
+            <p>cars sold</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-users"></i>
+        <div class="content">
+            <h3>320+</h3>
+            <p>happy clients</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3>1500+</h3>
+            <p>news cars</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="newsletter">
+    
+    <h3>subscribe</h3>
+    <p>We care about our clients so please subscribe to keep in touch with us</p>
+
+   <form action="">
+        <input type="email" placeholder="enter your email">
+        <input type="submit" value="subscribe">
+   </form>
+
+</section>
+
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Cars </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> services </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> most selling </a>
+        </div>
+
+        <div class="box">
+            <a href="#"> <i class="fas fa-phone"></i> +962-12233445 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +962-7882376 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> Ramimarji@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Amman, jordan - 062837 </a>
+        </div>
+
+        <div class="box">
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        </div>
+
+    </div>
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
